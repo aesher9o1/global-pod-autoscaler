@@ -1,0 +1,6 @@
+.venv
+.idea
+.env
+__pycache__
+.mypy_cache
+test_folder
