@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node dist/index.js",
     "start:dev": "nodemon",
-    "build": "tsc"
+    "build": "tsc",
+    "generate-types": "node_modules/@grpc/proto-loader/build/bin/proto-loader-gen-types.js --keepCase --longs=String --enums=String --defaults --oneofs --includeComments --grpcLib=@grpc/grpc-js --outDir=types/proto/ proto/*.proto"
   },
   "repository": {
     "type": "git",
