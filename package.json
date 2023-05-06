@@ -1,0 +1,45 @@
+{
+  "name": "global-pod-autoscaler",
+  "version": "1.0.0",
+  "description": "Scaling your spot pool deployments over many clusters for high availability",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/index.js",
+    "start:dev": "nodemon",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aesher9o1/global-pod-autoscaler.git"
+  },
+  "keywords": [
+    "kubernetes",
+    "autoscaler"
+  ],
+  "author": "aesher9o1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aesher9o1/global-pod-autoscaler/issues"
+  },
+  "homepage": "https://github.com/aesher9o1/global-pod-autoscaler#readme",
+  "devDependencies": {
+    "@types/node": "^20.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "eslint": "^8.40.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "winston": "^3.8.2",
+    "winston-timestamp-colorize": "^1.1.0"
+  }
+}
