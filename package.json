@@ -37,6 +37,8 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.8.14",
+    "@grpc/proto-loader": "^0.7.7",
     "dotenv": "^16.0.3",
     "nodemon": "^2.0.22",
     "winston": "^3.8.2",
