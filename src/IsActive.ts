@@ -7,8 +7,8 @@ import { ScaledObjectRef } from '../types/proto/externalscaler/ScaledObjectRef'
  * and scaler metadata.
  */
 export function isActive(
-  call: ServerUnaryCall<ScaledObjectRef, IsActiveResponse>,
-  callback: sendUnaryData<IsActiveResponse>
+  _call: ServerUnaryCall<ScaledObjectRef, IsActiveResponse>,
+  _callback: sendUnaryData<IsActiveResponse>
 ) {
   return null
 }

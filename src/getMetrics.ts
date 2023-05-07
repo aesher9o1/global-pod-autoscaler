@@ -7,8 +7,8 @@ import { GetMetricsRequest } from '../types/proto/externalscaler/GetMetricsReque
  */
 
 export function getMetric(
-  call: ServerUnaryCall<GetMetricsRequest, GetMetricsResponse>,
-  callback: sendUnaryData<GetMetricsResponse>
+  _call: ServerUnaryCall<GetMetricsRequest, GetMetricsResponse>,
+  _callback: sendUnaryData<GetMetricsResponse>
 ) {
   return null
 }

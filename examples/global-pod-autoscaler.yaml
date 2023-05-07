@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: global-pod-autoscaler
+  labels:
+    app: global-pod-autoscaler
+spec:
+  selector:
+    matchLabels:
+      app: global-pod-autoscaler
+  template:
+    metadata:
+      labels:
+        app: global-pod-autoscaler
+    spec:
+      terminationGracePeriodSeconds: 6
+      serviceAccountName: global-pod-autoscaler
+      containers:
+        - name: global-pod-autoscaler
+          image: bitnami/kubectl
+          command: ['/bin/bash', '-c', '--']
+          args: ['while true; do sleep 30; done;']
+          resources:
+            requests:
+              cpu: 200m
+              memory: 300M
+            limits:
+              cpu: 300m
+              memory: 1G
