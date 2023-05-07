@@ -38,6 +38,7 @@ server.bindAsync('0.0.0.0:3000', grpc.ServerCredentials.createInsecure(), async 
 
   try {
     const deployments = await getDeploymentsInNamespace()
+
     if (deployments.response.statusCode === 200) logger.info('Connection with kubernetes sucessfully stablished✅')
     else {
       logger.error(`Connection with kubernetes failed with the error code ${deployments.response.statusCode}`)
