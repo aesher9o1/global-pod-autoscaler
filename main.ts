@@ -3,12 +3,16 @@ import grpc from '@grpc/grpc-js'
 import protoLoader from '@grpc/proto-loader'
 import { ProtoGrpcType } from './types/proto/externalscaler'
 import { ExternalScalerHandlers } from './types/proto/externalscaler/ExternalScaler'
+import { isActive } from './src/IsActive'
+import { streamIsActive } from './src/streamIsActive'
+import { getMetric } from './src/getMetrics'
+import { getMetricSpec } from './src/getMetricSpec'
 
 const GlobalPodAutoscaler: ExternalScalerHandlers = {
-  IsActive: null as any,
-  GetMetrics: null as any,
-  GetMetricSpec: null as any,
-  StreamIsActive: null as any
+  IsActive: isActive,
+  StreamIsActive: streamIsActive,
+  GetMetrics: getMetric,
+  GetMetricSpec: getMetricSpec
 }
 
 const packageDefinition = protoLoader.loadSync('./proto/externalscaler.proto', {
