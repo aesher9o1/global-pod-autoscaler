@@ -17,9 +17,9 @@ spec:
       serviceAccountName: global-pod-autoscaler
       containers:
         - name: global-pod-autoscaler
-          image: bitnami/kubectl
-          command: ['/bin/bash', '-c', '--']
-          args: ['while true; do sleep 30; done;']
+          image: aesher9o1/global-pod-autoscaler:0.0.1
+          ports:
+            - containerPort: 3000
           resources:
             requests:
               cpu: 200m
@@ -27,3 +27,15 @@ spec:
             limits:
               cpu: 300m
               memory: 1G
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: global-pod-autoscaler
+spec:
+  type: LoadBalancer
+  selector:
+    app: global-pod-autoscaler
+  ports:
+    - port: 80
+      targetPort: 3000

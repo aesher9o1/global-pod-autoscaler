@@ -5,7 +5,8 @@
   "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && node dist/main.js",
+    "start": "npm run build && npm run start:prod",
+    "start:prod": "node dist/main.js",
     "start:dev": "nodemon",
     "build": "tsc && npm run copy-assets",
     "copy-assets": "mkdir -p dist/proto && cp ./proto/* ./dist/proto/",

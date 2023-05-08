@@ -11,6 +11,6 @@ spec:
   triggers:
     - type: external-push
       metadata:
-        scalerAddress: 0.tcp.in.ngrok.io:13192
+        scalerAddress: 34.131.108.141:80
         governer: unschedulable-pod
         namespace: default
