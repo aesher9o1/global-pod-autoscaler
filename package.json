@@ -2,7 +2,7 @@
   "name": "global-pod-autoscaler",
   "version": "1.0.0",
   "description": "Scaling your spot pool deployments over many clusters for high availability",
-  "main": "main.js",
+  "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node dist/main.js",
