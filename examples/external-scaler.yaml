@@ -1,0 +1,16 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: wandb
+spec:
+  scaleTargetRef:
+    name: wandb
+  minReplicaCount: 1
+  maxReplicaCount: 20
+  pollingInterval: 1
+  triggers:
+    - type: external-push
+      metadata:
+        scalerAddress: 0.tcp.in.ngrok.io:13192
+        governer: unschedulable-pod
+        namespace: default

@@ -5,3 +5,5 @@ export function sanatiseMetadata(metadata: ScalerMetadata) {
   if (!metadata.namespace) throw new Error('key namespace is missing')
   return true
 }
+
+export const METRIC_NAME = 'pendingPods'

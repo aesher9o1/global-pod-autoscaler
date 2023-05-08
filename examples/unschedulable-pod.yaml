@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: unschedulable-pod
+  labels:
+    app: unschedulable-pod
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: unschedulable-pod
+  template:
+    metadata:
+      labels:
+        app: unschedulable-pod
+    spec:
+      terminationGracePeriodSeconds: 6
+      containers:
+        - name: unschedulable-pod
+          image: bitnami/kubectl
+          command: ['/bin/bash', '-c', '--']
+          args: ['while true; do sleep 30; done;']
+          resources:
+            requests:
+              cpu: 200m
+              memory: 300M
+            limits:
+              cpu: 300m
+              memory: 1G
+      nodeSelector:
+        cloud.google.com/gke-nodepool: unschedulable-node-pool
