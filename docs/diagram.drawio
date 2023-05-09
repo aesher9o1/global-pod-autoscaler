@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" modified="2023-05-09T06:36:43.354Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="mUjkgUGiFJUOYDqaHq20" version="21.2.3" type="device">
+  <diagram name="Page-1" id="9nVU4NVpcS5w5R7fApIO">
+    <mxGraphModel dx="3213" dy="950" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-32" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="60" width="2060" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="qhjuZyrbymtKn2wdhf-E-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="220" width="440" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="220" width="480" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1275" y="220" width="485" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-3" value="Main cluster" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="230" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-4" value="Secondary cluster" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="230" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-5" value="Tertiary Cluster" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="230" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-6" value="Important&amp;nbsp;&lt;br&gt;deployment" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-7" value="Standby&amp;nbsp;&lt;br&gt;Deployment" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="690" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-8" value="Standby&amp;nbsp;&lt;br&gt;Deployment" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="V_JWUvDRR_tsWl3h22J2-9" target="V_JWUvDRR_tsWl3h22J2-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-20" value="2. Need more 70 pods" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V_JWUvDRR_tsWl3h22J2-19">
+          <mxGeometry x="-0.0837" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.438;entryY=0.98;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="V_JWUvDRR_tsWl3h22J2-9" target="V_JWUvDRR_tsWl3h22J2-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-22" value="3. Try scheduling" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V_JWUvDRR_tsWl3h22J2-21">
+          <mxGeometry x="-0.1341" y="1" relative="1" as="geometry">
+            <mxPoint x="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-9" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://keda.sh/img/logos/keda-icon-color.png;" vertex="1" parent="1">
+          <mxGeometry x="840" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="V_JWUvDRR_tsWl3h22J2-11" target="V_JWUvDRR_tsWl3h22J2-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-15" value="1. Fetch Replica State" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V_JWUvDRR_tsWl3h22J2-14">
+          <mxGeometry x="0.0588" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-11" value="Global pod &lt;br&gt;Autosaler" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="330" y="290" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="V_JWUvDRR_tsWl3h22J2-12" target="V_JWUvDRR_tsWl3h22J2-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-25" value="4. Fetch Replica State" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V_JWUvDRR_tsWl3h22J2-24">
+          <mxGeometry x="0.1257" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-12" value="Global pod &lt;br&gt;Autosaler" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="980" y="290" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="V_JWUvDRR_tsWl3h22J2-13" target="V_JWUvDRR_tsWl3h22J2-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-28" value="5. Need more 35 pods" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V_JWUvDRR_tsWl3h22J2-27">
+          <mxGeometry x="-0.1256" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="V_JWUvDRR_tsWl3h22J2-13" target="V_JWUvDRR_tsWl3h22J2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-31" value="4. Try Scheduling" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V_JWUvDRR_tsWl3h22J2-30">
+          <mxGeometry x="-0.0604" relative="1" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-13" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://keda.sh/img/logos/keda-icon-color.png;" vertex="1" parent="1">
+          <mxGeometry x="1485" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-16" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;30&amp;nbsp;&lt;/font&gt;/ 100&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-23" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;35&amp;nbsp;&lt;/font&gt;/ 70&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-26" value="&lt;b&gt;35&amp;nbsp;/ 35&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V_JWUvDRR_tsWl3h22J2-33" value="&lt;font style=&quot;font-size: 32px;&quot;&gt;Global Pod Autoscaler&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="90" width="490" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
